@@ -30,7 +30,7 @@ public class Main {
 
         System.out.println("Enter a password");
         String password = scanner.next();
-        String regexPassword = "^(?=.*[0-9])(?=.*[A-Z]).{8,}$";
+        String regexPassword = "^(?=.*[0-9])(?=.*[A-Z])(?=[^!@#$%^&+=]*[!@#$%^&+=][^!@#$%^&+=]*$).{8,}$";
         System.out.println(password.matches(regexPassword));
     }
 }
