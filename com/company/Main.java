@@ -21,11 +21,16 @@ public class Main {
         System.out.println("Enter a valid email id(eg: abc.xyz@bl.co.in)");
         String emailID = scanner.next();
         String regexEmailID = "^[\\w]+(?:\\.[\\w]+)*@[\\w]+(?:\\.[\\w]+)*$";
-        System.out.println(emailID.matches(regexEmailID));*/
+        System.out.println(emailID.matches(regexEmailID));
 
         System.out.println("Enter a valid mobile number");
         String mobileNumber = scanner.next();
         String regexMobileNumber = "^91[ ][\\d]{10}$";
-        System.out.println(mobileNumber.matches(regexMobileNumber));
+        System.out.println(mobileNumber.matches(regexMobileNumber));*/
+
+        System.out.println("Enter a password");
+        String password = scanner.next();
+        String regexPassword = "[\\w]{8,}";
+        System.out.println(password.matches(regexPassword));
     }
 }
